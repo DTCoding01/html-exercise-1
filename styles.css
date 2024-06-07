@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #121212; 
@@ -14,12 +15,15 @@ body {
     text-align: center;
 }
 
+/* Header Styling */
 #main-header {
     background-color: #000; 
     padding: 2vh;
     border-bottom: 2px solid #FFD700; 
-    display: grid;
-    place-items: center;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .header-title {
@@ -54,26 +58,31 @@ body {
     color: #FFD700;
 }
 
+/* Main Content Styling */
 main {
     padding: 2vh;
     display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 2vh;
-    place-items: center;
-    overflow: hidden; 
+    align-items: start;
+    max-width: 1100px; 
+    width: 100%; 
+    margin: 0 auto; 
 }
 
 h2 {
-    font-size: 4vh;
+    font-size: 8vh;
     color: #FFD700; 
+    grid-column: span 2; 
 }
 
 h3 {
-    font-size: 3vh;
+    font-size: 5vh;
     color: #FFD700;
 }
 
 p, ul, ol {
-    font-size: 2.5vh;
+    font-size: 3vh;
 }
 
 ul, ol {
@@ -85,19 +94,30 @@ li {
     margin: 1vh 0;
 }
 
+/* Main Image Styling */
 .main-image {
     border: 3px solid #FFD700; 
-    max-width: 80%;
-    max-height: 40vh; 
+    max-width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
+.right-column {
+    grid-column: 2; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 2vh;
+}
+
+/* Footer Styling */
 footer {
     background-color: #000; 
     padding: 1vh;
     border-top: 2px solid #FFD700; 
-    display: grid;
-    place-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .footer-link {
