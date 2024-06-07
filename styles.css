@@ -59,6 +59,7 @@ main {
     display: grid;
     gap: 2vh;
     place-items: center;
+    overflow: hidden; 
 }
 
 h2 {
@@ -89,7 +90,6 @@ li {
     max-width: 80%;
     max-height: 40vh; 
     height: auto;
-    border-radius: 20px;
 }
 
 footer {
@@ -110,5 +110,3 @@ footer {
 .footer-link:hover {
     color: #FFF; 
 }
-
-
